@@ -34,17 +34,18 @@ renderTodos: function(todos){
 
    
 },
-handelAddtodo: async function(){
+handelAddtodo: async function(e){
     debugger;
-   
+    
     const newTodo={
-        todoText: document.getElementById('add').value,
+        todoText: e.form.add.value,
         completed: false,
 
     };
-     
+    
     const todorender = await this.postTodo(newTodo);
-   return document.getElementById('root').innerHTML = this.renderTodo(todorender);
+   document.getElementById('root').innerHTML = this.renderTodo(todorender);
+    e.preventDefault();
 },
 displayAll: async function(){
     debugger;
