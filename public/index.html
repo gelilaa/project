@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf8'>
+  <title>RESTful PJS</title>
+
+  <link href='./style.css' rel='stylesheet' />
+</head>
+
+<body>
+<div class="wrapper">
+  <h1>To-do</h1>
+  <form class="add-items">
+    <input id="toggle-all" class="" onclick="handlers.toggleAll()" type="button" value="">
+    <input class="new-todo" id="add" placeholder="What needs to be done?" autofocus required\>
+    <input type="submit" onclick="fetchtodo.handelAddtodo(this,'root')" value="" class="btn" />
+  </form>
+  <button onclick="fetchtodo.displayAll()">all</button>
+  <div id='root'>
+    <ul class="added">
+    </ul>
+  </div>
+</div>
+  
+</body>
+<script src="fetch.js"></script>
+</html>

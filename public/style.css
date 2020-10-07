@@ -1,0 +1,130 @@
+body {
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background-image: url('https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 230px;
+    max-width: 550px;
+    margin: 0 auto;
+    font-weight: 250;
+   
+}
+
+:focus {
+    outline: 0;
+}
+
+
+
+.wrapper{
+   position: absolute;
+   top: 200px;
+   color: white;
+   box-sizing: border-box;
+   background: rgba(0, 0, 0, 0.8);
+   border-radius: 10px;
+   padding: 1rem;
+   margin: 1rem;
+}
+
+
+
+ h1 {
+    position: absolute;
+    right: 10rem;
+    top: -155px;
+    width: 50%;
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+}
+.new-todo{
+    position: relative;
+    margin: 0;
+    width: 450px;
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: 1.4em;
+    border: 0;
+    color: gray;
+    padding: 6px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.btn {
+    display: none;
+    position: absolute;
+    background-image: url('https://image.flaticon.com/icons/svg/875/875068.svg');
+    background-repeat: no-repeat;
+    right:15px;
+    bottom: 30px;
+    outline: none;
+    border: none;
+    height: 35px;
+    border-radius: 25px;
+    width: 32px;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+}
+
+
+#toggle-all {
+position: relative;
+ background: url(https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/arrow_down-512.png) center center / cover no-repeat;
+ background-color:white;
+ outline: none;
+ border: none;
+ height: 45px;
+ border-radius: none;
+ width: 55px;
+ color:black;
+ cursor: pointer;
+ transition: .5s;
+ top:19px;
+ z-index: 1;
+right: -10px;
+ margin: 0.25rem;
+}
+
+.add-items{
+    padding:0;
+}
+
+
+.destroy {
+    outline: none;
+    border: none;
+    height: 20px;
+    width: 30px;
+    background: white;
+    font-size: 1rem;
+    margin: 0.25rem;
+    cursor: pointer;
+    transition: .5s;
+    z-index: 1;
+    position: sticky;
+    left: 270px;
+}
+li{
+    list-style: none;
+    font: 200 20px/1.5 Helvetica,
+    Verdana,
+    sans-serif;
+    border-bottom: 1px solid #ccc;
+}
+.checkbox {
+    color: black;
+    text-decoration: line-through;
+    background-color: white;
+}
