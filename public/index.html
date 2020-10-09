@@ -2,7 +2,7 @@
 <html lang='en'>
 
 <head>
-  <meta charset='utf8'>
+  <meta charset='UTF-8'>
   <title>RESTful PJS</title>
 
   <link href='./style.css' rel='stylesheet' />
@@ -14,11 +14,11 @@
   <form class="add-items">
     <input id="toggle-all" class="" onclick="handlers.toggleAll()" type="button" value="">
     <input class="new-todo" id="add" placeholder="What needs to be done?" autofocus required\>
-    <input type="submit" onclick="fetchtodo.handelAddtodo(this,'root')" value="" class="btn" />
+    <input type="submit" onclick="fetchtodo.handelAddtodo()"  class="btn" />
   </form>
   <button onclick="fetchtodo.displayAll()">all</button>
   <div id='root'>
-    <ul class="added">
+    <ul class="added" id="added">
     </ul>
   </div>
 </div>
