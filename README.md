@@ -8,7 +8,7 @@
 
 </div>
 
-  <h3 align="center">"LIST PROTOTYPE" Project</h3>
+  <h3 align="center">"RESTful-PJS" Project</h3>
 
   <p align="center">
     One project Three Juniors.
@@ -43,7 +43,7 @@
 
 The live demo is right [here](https://number000.herokuapp.com/), it looks something like this:
 
-![List-Prototype](public/assets/screenshot.png)
+
 
 This project aims to use work flow while practicing basic JavaScript concepts. For the purpose of this project, the 3 junior developers were partnered together to work on the project.
 
