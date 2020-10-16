@@ -13,14 +13,14 @@
   <p align="center">
     One project Three Juniors.
     <br />
-    <a href="https://github.com/gelilaa/Pomodoro-Timer-"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/gelilaa/project-"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://gelilaa.github.io/Pomodoro-Timer/">View Demo</a>
+    <a href="https://number000.herokuapp.com/">View Demo</a>
     ·
-    <a href="https://github.com/gelilaa/Pomodoro-Timer/issues">Report Bug</a>
+    <a href="https://github.com/gelilaa/project/issues">Report Bug</a>
     ·
-    <a href="https://github.com/gelilaa/Pomodoro-Timer/issues">Request Feature</a>
+    <a href="https://github.com/gelilaa/project/issues">Request Feature</a>
   </p>
 </p>
 
@@ -41,7 +41,7 @@
 
 ## About The Project
 
-The live demo is right [here](https://gelilaa.github.io/Pomodoro-Timer/), it looks something like this:
+The live demo is right [here](https://number000.herokuapp.com/), it looks something like this:
 
 ![List-Prototype](public/assets/screenshot.png)
 
@@ -53,7 +53,6 @@ The objective of this project is to build a simple html,CSS and JavaScript page 
 - Encapsulation
 - Object Oriented Programming
 - Inheritance
-- Using prototypes(`Object.create`)
 - Binding handlers
 - Exploring `import`-`export`
 
@@ -96,7 +95,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - [Abel](https://github.com/abelRoland)
 - [Fatih](https://github.com/fmkarakus)
 
-Project Link: [List-Prototype](https://github.com/gelilaa/Pomodoro-Timer)
+Project Link: [Restful-pjs](https://github.com/gelilaa/project)
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -109,11 +108,11 @@ Project Link: [List-Prototype](https://github.com/gelilaa/Pomodoro-Timer)
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/gelilaa/Pomodoro-Timer.svg?style=flat-square
-[contributors-url]: https://github.com/HazemBittar/Whack-A-Mole-/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/gelilaa/Pomodoro-Timer.svg?style=flat-square
-[forks-url]: https://github.com/gelilaa/Pomodoro-Timer/network/members
-[issues-shield]: https://img.shields.io/github/issues/gelilaa/Pomodoro-Timer.svg?style=flat-square
-[issues-url]: https://github.com/gelilaa/Pomodoro-Timer/issues
-[license-shield]: https://img.shields.io/github/license/gelilaa/Pomodoro-Timer.svg?style=flat-square
-[license-url]: https://github.com/gelilaa/Pomodoro-Timer/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/gelilaa/project.svg?style=flat-square
+[contributors-url]: https://github.com/gelilaa/project/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/gelilaa/project.svg?style=flat-square
+[forks-url]: https://github.com/gelilaa/project/network/members
+[issues-shield]: https://img.shields.io/github/issues/gelilaa/project.svg?style=flat-square
+[issues-url]: https://github.com/gelilaa/project/issues
+[license-shield]: https://img.shields.io/github/license/gelilaa/project.svg?style=flat-square
+[license-url]: https://github.com/gelilaa/project/blob/master/LICENSE
