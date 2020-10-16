@@ -151,7 +151,6 @@ deleteAll:  function (){
 
 deleteOne: async function (event){
   debugger;
-  //let target=event.currentTarget
   let id= event.id;
   console.log(id)
   
@@ -163,7 +162,6 @@ deleteOne: async function (event){
 edit:async function (event) {
   debugger;
   const newName = prompt('Edit Task Name')
-  //let target=event.currentTarget
   let id= event.id;
   console.log(id)
   const todoToPatch = {
