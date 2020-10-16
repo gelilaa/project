@@ -1,50 +1,39 @@
 {
   "todos": [
     {
-      "todoText": "new todo",
-      "completed": false,
+      "todoText": "working",
+      "completed": true,
       "id": 1
     },
     {
+      "todoText": "project",
       "completed": true,
       "id": 2
     },
     {
-      "todoText": "third todo",
-      "completed": true,
+      "todoText": "is",
+      "completed": false,
       "id": 3
     },
     {
+      "todoText": "This",
       "completed": false,
-      "todoText": "wm9ug",
       "id": 4
     },
     {
-      "completed": true,
-      "todoText": "1c67",
+      "todoText": "hello",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "todoText": "world",
+      "completed": false,
       "id": 6
     },
     {
+      "todoText": "edited",
       "completed": false,
-      "todoText": "tsfqv",
       "id": 7
-    },
-    {
-      "completed": true,
-      "todoText": "m2px",
-      "id": 8
-    },
-    {
-      "completed": true,
-      "todoText": "uwo7q",
-      "id": 9
-    },
-    {
-      "completed": true,
-      "todoText": "qn536o",
-      "id": 10
     }
-    
-    
   ]
 }

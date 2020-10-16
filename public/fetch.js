@@ -13,7 +13,7 @@ const fetchtodo ={
         console.log(err);
     };
 
-},
+    },
     getAll: async function () {
         try {
             const res = await fetch('/todos');
@@ -22,6 +22,34 @@ const fetchtodo ={
             console.log(err);
         };
     },
+
+    patchTodo: async function (id, patcher) {
+        try {
+          const res = await fetch('/todos/' + id, {
+            method: 'PATCH',
+            body: JSON.stringify(patcher),
+            headers: {
+              "Content-type": "application/json; charset=UTF-8"
+            }
+          });
+          return await res.json();
+        } catch (err) {
+          console.log(err);
+        };
+      },
+
+    deleteTodo: async function (id) {
+        try {
+          const res = await fetch('/todos/' + id, {
+            method: 'DELETE'
+          });
+          return await res.json();
+        } catch (err) {
+          console.log(err);
+        };
+      },
+
+
     toggleOne: async function (e) {
         //debugger
         toDoToggle = e.id;
@@ -87,16 +115,32 @@ const fetchtodo ={
         label.innerHTML = todo.todoText
         //li.innerHTML = `<label for="${todo.id}">${todo.todoText}</label>`;
         check.addEventListener('click',this.toggleOne.bind(this, check));
-      
+        
+        //delete button
+        var deleteButton = document.createElement("button");
+        deleteButton.innerHTML = '<i class="fa fa-trash"></i>';
+        deleteButton.className = "destroy";
+        deleteButton.style.float="right";
+        deleteButton.id=todo.id;
+        li.appendChild(deleteButton);
+        deleteButton.addEventListener("click",this.deleteOne.bind(this,deleteButton));
+        //edit button
+        var editButton = document.createElement("button");
+        editButton.innerHTML = '<i class="fas fa-pen"></i>';
+        editButton.className = "destroy";
+        editButton.style.float="right";
+        editButton.id=todo.id;
+        li.appendChild(editButton);
+        editButton.addEventListener("click",this.edit.bind(this,editButton))
+        
         li.appendChild(check);
         li.appendChild(label);
         ul.appendChild(li);
         div.appendChild(ul);
-   
     
 },
 
-deleteAll: function (){
+deleteAll:  function (){
     //debugger
     const element = document.getElementById('root');
 
@@ -105,14 +149,37 @@ deleteAll: function (){
     };
 },
 
+deleteOne: async function (event){
+  debugger;
+  let id= event.id;
+  console.log(id)
+  
+  const del= await this.deleteTodo(id);
+  
+  this.displayAll()
+},
+
+edit:async function (event) {
+  debugger;
+  const newName = prompt('Edit Task Name')
+  let id= event.id;
+  console.log(id)
+  const todoToPatch = {
+    id,
+    todoText: newName
+  };
+
+  const edited = await this.patchTodo(id,todoToPatch)
+  this.displayAll()
+},
+
 renderTodos: function(todos){
    
    todos
    .map(todo=>this.renderTodo(todo))
    .reduce((first,second)=> first + second,'')
-
-   
 },
+
 handelAddtodo: async function(e){
     debugger;
    e = e || window.event;
@@ -120,19 +187,17 @@ handelAddtodo: async function(e){
     const newTodo={
         todoText: e.target.form.add.value,
         completed: false,
-
     };
-    
-    const todorender = await this.postTodo(newTodo);
+        const todorender = await this.postTodo(newTodo);
     this.renderTodo(todorender)
     document.getElementById("add").value = "";
 },
+
 displayAll: async function(){
     debugger;
     this.deleteAll();
     const allTodos = await this.getAll();
     this.renderTodos(allTodos);
-
-}
+}, 
 
 }
